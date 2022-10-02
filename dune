@@ -1,0 +1,4 @@
+(executable (name stacked))
+
+(ocamllex stacked_lexers)
+(menhir (modules stacked_parsers) (flags --explain))
